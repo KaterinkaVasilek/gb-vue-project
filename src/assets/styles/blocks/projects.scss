@@ -1,0 +1,41 @@
+.projects__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 104px;
+  row-gap: 56px;
+}
+
+.projects__img {
+  margin-bottom: 28px;
+  min-width: 548px;
+  min-height: 525px;
+  object-fit: cover;
+  object-position: center;
+
+  &--btr {
+    border-top-right-radius: 80px;
+  }
+
+  &--btl {
+    border-top-left-radius: 80px;
+  }
+
+  &--bbl {
+    border-bottom-right-radius: 80px;
+  }
+
+  &--bbr {
+    border-bottom-left-radius: 80px;
+  }
+}
+
+.projects__action,
+.articles__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projects__title {
+  margin-bottom: 4px;
+}

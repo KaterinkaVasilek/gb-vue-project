@@ -1,0 +1,19 @@
+.header__wrapper {
+  margin-bottom: 57px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// nav
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav__link {
+  font-family: $ff-secondary;
+}
