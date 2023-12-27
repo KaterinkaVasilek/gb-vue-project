@@ -1,6 +1,7 @@
 .articles__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-items: start;
   gap: 27px;
 }
 
@@ -21,10 +22,15 @@
 
 .articles__link {
   position: relative;
+  min-height: 505px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-self: stretch;
 }
 
 .articles__img {
-  margin-bottom: 21px;
   max-width: 340px;
   object-fit: cover;
   object-position: center;
@@ -53,6 +59,7 @@
   letter-spacing: 0.5px;
 }
 
-.articles__date {
+.articles__date,
+.post__date {
   font-size: 16px;
 }

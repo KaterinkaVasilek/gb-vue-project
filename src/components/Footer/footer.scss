@@ -17,6 +17,13 @@
 
 .footer__center {
   grid-column: 2;
+
+  & .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 35px;
+  }
 }
 
 .footer__right {
@@ -39,12 +46,6 @@
   font-family: $ff-titles;
   font-size: 30px;
   line-height: $lh-titles;
-}
-
-.footer__pages {
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
 }
 
 .footer__contacts {
