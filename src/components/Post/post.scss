@@ -1,0 +1,42 @@
+.post__wrapper {
+  margin-bottom: 156px;
+}
+
+.post__content {
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 65px;
+  border-radius: 62px;
+  border: 1px solid $color-light-grey;
+  box-shadow: $shadow025;
+}
+
+.post__img {
+  border-radius: 50px;
+  background-color: $color-gray;
+}
+
+.post__heading {
+  margin-bottom: 22px;
+  font-family: $ff-titles;
+  font-size: 25px;
+  font-weight: $fw-default;
+  line-height: $lh-titles;
+  letter-spacing: 0.5px;
+}
+
+.post__text {
+  color: $color-dark-grey;
+  font-size: 22px;
+  line-height: $lh-secondary;
+
+  &:not(:last-of-type) {
+    margin-bottom: 35px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 50px;
+  }
+}

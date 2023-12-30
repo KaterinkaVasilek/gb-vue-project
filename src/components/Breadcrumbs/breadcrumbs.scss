@@ -1,0 +1,12 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__link {
+  font-family: $ff-secondary;
+  font-size: 22px;
+  line-height: $lh-secondary;
+  font-weight: $fw-default;
+  letter-spacing: 0.22px;
+}
