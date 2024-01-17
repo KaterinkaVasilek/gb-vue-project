@@ -10,6 +10,11 @@
   border-radius: 62px;
   border: 1px solid $color-light-grey;
   box-shadow: $shadow025;
+  transition: all 0.3s ease-in-out;
+
+  @include hover {
+    box-shadow: $cardShadow;
+  }
 
   &:nth-child(even) {
     background-color: $color-light-beige;
@@ -62,4 +67,10 @@
 .articles__date,
 .post__date {
   font-size: 16px;
+}
+
+.article-page {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 52px;
 }

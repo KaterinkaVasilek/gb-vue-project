@@ -19,6 +19,10 @@
   border: 1px solid $color-dark-gold;
   background-color: $color-white;
 
+  @include hover {
+    cursor: pointer;
+  }
+
   &--active {
     border: 1px solid transparent;
     background-color: $color-light-beige;

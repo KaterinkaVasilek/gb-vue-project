@@ -4,16 +4,17 @@ import Breadcrumbs from '@/components/Breadcrumbs/Breadcrumbs.vue';
 
 const props = defineProps({
   heading: String,
-  isMain: Boolean
+  isMain: Boolean,
+  isArticle: Boolean
 })
 
 </script>
 
 <template>
-  <section class="intro common" :class="{ 'intro--secondary': !isMain }">
+  <section class="intro common" :class="{ 'intro--blog': !isMain, 'intro--article' : isArticle }">
     <div class="intro__wrapper common__wrapper container">
       <div class="intro__content" :class="{ 'intro__content--params': !isMain }">
-        <div class="intro__heading" :class="{ 'intro__heading--params': !isMain }">
+        <div class="intro__heading" :class="{ 'intro__heading--params': !isMain, 'intro__heading--none': isArticle } ">
           <h1 class="intro__title" :class="{ 'intro__title--params': !isMain }">{{ heading || 'Let Your Home Be Unique' }}</h1>
           <Breadcrumbs v-show="!isMain" />
           <div class="intro__info" v-show="isMain">

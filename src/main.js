@@ -5,6 +5,7 @@ import App from './App.vue';
 import Home from '@/pages/MainPage.vue';
 import Blog from '@/pages/BlogPage.vue';
 import Project from '@/pages/ProjectPage.vue';
+import Article from '@/pages/Article.vue';
 
 
 const routes = [
@@ -19,6 +20,10 @@ const routes = [
   {
     component: Project,
     path: '/project'
+  },
+  {
+    component: Article,
+    path: '/article'
   }
 ]
 

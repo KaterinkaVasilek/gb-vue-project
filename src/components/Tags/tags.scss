@@ -1,0 +1,46 @@
+.tags {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.tags__title{
+  margin-bottom: 24px;
+  font-family: $ff-titles;
+  color: $color-black;
+  font-size: 25px;
+  line-height: $lh-titles;
+  letter-spacing: 0.5px;
+}
+
+.tags__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags__item {
+  background-color: $color-light-beige;
+  border-radius: 10px;
+
+  &--active {
+    color: $color-light-beige;
+    background-color: $color-black;
+  }
+}
+
+
+.tags__label {
+  padding: 9px 30px;
+  display: block;
+  font-family: $ff-secondary;
+  font-size: 18px;
+  font-style: normal;
+  line-height: $lh-titles;
+  letter-spacing: 0.36px;
+  cursor: pointer;
+}
+
+.tags__input {
+  appearance: none;
+  visibility: hidden;
+}
