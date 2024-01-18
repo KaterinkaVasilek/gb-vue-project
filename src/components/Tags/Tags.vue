@@ -7,30 +7,41 @@ const articles = JSON.parse(dataArticles);
 const tagItem = ref(null);
 
 const tags = [
-  'Kitchen',
-  'Bedroom',
-  'Building',
-  'Architecture',
-  'Kitchen Planning',
-  'Bathroom'
+  {
+    id: 0,
+    tagName: 'Kitchen'
+  },
+  {
+    id: 1,
+    tagName: 'Bedroom'
+  },
+  {
+    id: 2,
+    tagName: 'Building'
+  },
+  {
+    id: 3,
+    tagName: 'Architecture'
+  },
+  {
+    id: 4,
+    tagName: 'Kitchen Planning'
+  },
+  {
+    id: 5,
+    tagName: 'Bathroom'
+  }
 ]
 
 const showArticle = (e) => {
-  tags.forEach(tag => {
-    // console.log(tag);
-    articles.forEach(obj => {
-      console.log(e.currentTarget);
-      if(e.currentTarget) {
-        
-      }
-      
-      // console.log(obj);
-    })
+  e.currentTarget.closest
+  articles.forEach(obj => {
+    console.log(e.currentTarget.id, 'test');
+    console.log(obj.id);
+    if(e.currentTarget.id === obj.id) {
+      console.log('hello');
+    }
   })
-  //   const filteredArticle = articles.filter((obj) => {
-
-  //   });
-  // return filteredArticle;
 }
 
 </script>
@@ -39,9 +50,9 @@ const showArticle = (e) => {
   <div class="tags">
     <h2 class="tags__title">Tags</h2>
     <ul class="tags__list">
-      <li class="tags__item" v-for="tag in tags" :key="index" ref="tagItem">
-        <label class="tags__label">{{ tag }}
-          <input class="tags__input" type="radio" @click="showArticle">
+      <li class="tags__item" v-for="tag in tags" :key="id" ref="tagItem">
+        <label class="tags__label">{{ tag.tagName }}
+          <input class="tags__input" :id="tag.id" type="radio" @click="showArticle">
         </label>
       </li>
     </ul>

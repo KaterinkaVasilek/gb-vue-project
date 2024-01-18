@@ -1,7 +1,7 @@
 export const dataArticles = `
   [
     {
-      "id": 1,
+      "id": 0,
       "src": "/img/articles-1.jpg",
       "tag": "Kitchen",
       "mainTitle": "Let’s Get Solution For Building Construction Work",
@@ -17,7 +17,7 @@ export const dataArticles = `
       }
     },
     {
-      "id": 2,
+      "id": 1,
       "src": "/img/articles-2.jpg",
       "tag": "Bedroom",
       "mainTitle": "Low Cost Latest Invented Interior Designing Ideas.",
@@ -35,7 +35,7 @@ export const dataArticles = `
       }
     },
     {
-      "id": 3,
+      "id": 2,
       "src": "/img/articles-3.jpg",
       "tag": "Building",
       "mainTitle": "Best For Any Office & Business Interior Solution",
@@ -50,7 +50,7 @@ export const dataArticles = `
       }
     },
     {
-      "id": 4,
+      "id": 3,
       "src": "/img/articles-4.jpg",
       "tag": "Architecture",
       "mainTitle": "Let’s Get Solution For Building Construction Work",
@@ -69,7 +69,7 @@ export const dataArticles = `
       }
     },
     {
-      "id": 5,
+      "id": 4,
       "src": "/img/articles-5.jpg",
       "tag": "Kitchen Planning",
       "mainTitle": "Low Cost Latest Invented Interior Designing Ideas.",
@@ -85,7 +85,7 @@ export const dataArticles = `
       }
     },
     {
-      "id": 6,
+      "id": 5,
       "src": "/img/articles-6.jpg",
       "tag": "Bathroom",
       "mainTitle": "Best For Any Office & Business Interior Solution",
