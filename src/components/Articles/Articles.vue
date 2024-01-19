@@ -1,6 +1,21 @@
 <script setup>
 import './articles.scss';
-import { ref, computed } from 'vue';
+import { computed } from 'vue';
+import { dataTags } from '@/data/dataTags.js';
+
+const tags = JSON.parse(dataTags);
+let arrTag = [];
+
+const arrParse = () => {
+  tags.forEach(item => {
+    arrTag.push(item.tagName);
+  })
+  return arrTag;
+}
+arrParse();
+const tagsParse = () => {
+  
+}
 
 const props = defineProps({
   max: Boolean,
@@ -12,7 +27,7 @@ const articles = [
   {
     id: 1,
     src: '/img/articles-1.jpg',
-    tag: 'Kitchen',
+    tag: arrParse(),
     title: 'Let’s Get Solution For Building Construction Work',
     date: '26 December,2022'
   },

@@ -1,9 +1,9 @@
-.tags {
+.article-detail {
   grid-column: 2;
   grid-row: 1;
 }
 
-.tags__title{
+.article-detail__title{
   margin-bottom: 24px;
   font-family: $ff-titles;
   color: $color-black;
@@ -12,13 +12,13 @@
   letter-spacing: 0.5px;
 }
 
-.tags__list {
+.article-detail__list {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.tags__item {
+.article-detail__item {
   background-color: $color-light-beige;
   border-radius: 10px;
 
@@ -29,7 +29,7 @@
 }
 
 
-.tags__label {
+.article-detail__label {
   padding: 9px 30px;
   display: block;
   font-family: $ff-secondary;
@@ -40,7 +40,7 @@
   cursor: pointer;
 }
 
-.tags__input {
+.article-detail__input {
   appearance: none;
   visibility: hidden;
 }

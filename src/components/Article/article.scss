@@ -1,11 +1,11 @@
 .article {
-  display: none;
+  // display: none;
   grid-column: 1;
   grid-row: 1 / span 3;
 
-  &--active {
-    display: block;
-  }
+  // &--active {
+  //   display: block;
+  // }
 }
 
 .article__wrapper {

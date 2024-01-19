@@ -2,8 +2,7 @@
 import { ref } from 'vue';
 import Header from '@/components/Header/Header.vue';
 import Intro from '@/components/Intro/Intro.vue';
-import Article from '@/components/Article/Article.vue';
-import Tags from '@/components/Tags/Tags.vue';
+import ArticleDetail from '@/components/ArticleDetail/ArticleDetail.vue';
 import Articles from '@/components/Articles/Articles.vue';
 import Footer from '@/components/Footer/Footer.vue';
 
@@ -20,8 +19,7 @@ const title = ref('');
            :isArticle = 'true'
     />
     <div class="article-page container">
-      <Article />
-      <Tags />
+      <ArticleDetail />
     </div>
     <Articles isBlog />
     <Footer />
