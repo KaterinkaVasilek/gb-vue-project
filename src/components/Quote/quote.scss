@@ -1,0 +1,22 @@
+.article__quote {
+  margin-bottom: 27px;
+  padding: 53px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $color-dark-gold;
+  font-family: $ff-titles;
+  font-size: 25px;
+  font-style: italic;
+  line-height: $lh-titles;
+  letter-spacing: 0.5px;
+  text-align: center;
+  background-color: $color-light-beige;
+  border-radius: 50px;
+
+  & p {
+    max-width: 360px;
+  }
+}

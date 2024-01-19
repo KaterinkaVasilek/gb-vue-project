@@ -5,6 +5,6 @@ import './breadcrumbs.scss'
 <template>
   <div class="breadcrumbs">
     <router-link class="breadcrumbs__link" to="/">Home /</router-link>
-    <router-link class="breadcrumbs__link intro__link--disabled" to="#">Blog</router-link>
+    <router-link class="breadcrumbs__link intro__link--disabled" to="/blog">&nbsp;Blog</router-link>
   </div>
 </template>

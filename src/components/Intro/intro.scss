@@ -1,7 +1,12 @@
 .intro {
-  &--secondary {
+  &--blog {
     background-image: url("../img/blog-intro.jpg");
     background-repeat: no-repeat;
+  }
+
+  &--article {
+    background-image: url("../img/article-intro.jpg");
+    background-size: contain;
   }
 }
 
@@ -37,6 +42,10 @@
     justify-content: center;
     background-color: $color-white;
     border-radius: 37px 37px 0 0;
+  }
+
+  &--none {
+    display: none;
   }
 }
 

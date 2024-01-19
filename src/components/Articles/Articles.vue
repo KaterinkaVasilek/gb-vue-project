@@ -1,6 +1,21 @@
 <script setup>
 import './articles.scss';
-import { ref, computed } from 'vue';
+import { computed } from 'vue';
+import { dataTags } from '@/data/dataTags.js';
+
+const tags = JSON.parse(dataTags);
+let arrTag = [];
+
+const arrParse = () => {
+  tags.forEach(item => {
+    arrTag.push(item.tagName);
+  })
+  return arrTag;
+}
+arrParse();
+const tagsParse = () => {
+  
+}
 
 const props = defineProps({
   max: Boolean,
@@ -8,50 +23,50 @@ const props = defineProps({
   isBlog: Boolean
 })
 
-const articles = ref([
+const articles = [
   {
     id: 1,
     src: '/img/articles-1.jpg',
-    desc: 'Kitchan design',
+    tag: arrParse(),
     title: 'Let’s Get Solution For Building Construction Work',
     date: '26 December,2022'
   },
   {
     id: 2,
     src: '/img/articles-2.jpg',
-    desc: 'Living Design',
+    tag: 'Bedroom',
     title: 'Low Cost Latest Invented Interior Designing Ideas.',
     date: '26 December,2022'
   },
   {
     id: 3,
     src: '/img/articles-3.jpg',
-    desc: 'Interior Design',
+    tag: 'Building',
     title: 'Best For Any Office & Business Interior Solution',
     date: '22 December,2022'
   },
   {
     id: 4,
     src: '/img/articles-4.jpg',
-    desc: 'Kitchan design',
+    tag: 'Architecture',
     title: 'Let’s Get Solution For Building Construction Work',
     date: '26 December,2022'
   },
   {
     id: 5,
     src: '/img/articles-5.jpg',
-    desc: 'Living Design',
+    tag: 'Kitchen Planning',
     title: 'Low Cost Latest Invented Interior Designing Ideas.',
     date: '22 December,2022'
   },
   {
     id: 6,
     src: '/img/articles-6.jpg',
-    desc: 'Interior Design',
+    tag: 'Bathroom',
     title: 'Best For Any Office & Business Interior Solution',
     date: '25 December,2022'
   }
-]).value
+]
 
 const spliceList = computed(() => {
   return props.isMain ? articles.splice(0, 3) : articles;
@@ -69,15 +84,15 @@ const spliceList = computed(() => {
       </div>
       <ul class="articles__list">
         <li class="articles__item" v-for="(item) in spliceList" :key="id">
-          <a class="articles__link" href="#">
+          <router-link class="articles__link" to="/article">
             <img class="articles__img" :src="item.src" width="623" height="415" alt="Фото статьи.">
-            <span class="articles__desc">{{ item.desc }}</span>
+            <span class="articles__tag">{{ item.tag }}</span>
             <h3 class="articles__title">{{ item.title }}</h3>
             <div class="articles__bottom">
               <p class="articles__date">{{ item.date }}</p>
               <span class="common__arrow"></span>
             </div>
-          </a>
+          </router-link>
         </li>
       </ul>
     </div>
