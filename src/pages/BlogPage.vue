@@ -7,7 +7,8 @@ import Articles from '@/components/Articles/Articles.vue';
 import Pagination from '@/components/Pagination/Pagination.vue';
 import Footer from '@/components/Footer/Footer.vue';
 
-const title = ref('Articles & News')
+const title = ref('Articles & News');
+const currentLinkProject = ref("Blog");
 
 </script>
 
@@ -16,6 +17,7 @@ const title = ref('Articles & News')
     <Header />
     <Intro :heading = "title" 
            :isMain = 'false'
+           :currentLink = currentLinkProject 
     />
     <Post />
     <Articles isBlog />

@@ -1,7 +1,24 @@
 .intro {
-  &--secondary {
+  &--blog {
     background-image: url("../img/blog-intro.jpg");
     background-repeat: no-repeat;
+  }
+
+  &--article {
+    background-image: url("../img/article-intro.jpg");
+    background-size: contain;
+  }
+
+  &--projects {
+    background-image: url("../img/projects-intro.jpg");
+    background-size: contain;
+    background-position: right;
+  }
+
+  &--projects-detail {
+    background-image: url("../img/projects-detail-intro.jpg");
+    background-size: contain;
+    background-position: right;
   }
 }
 
@@ -38,6 +55,10 @@
     background-color: $color-white;
     border-radius: 37px 37px 0 0;
   }
+
+  &--none {
+    display: none;
+  }
 }
 
 .intro__title {
@@ -59,17 +80,4 @@
   font-family: $ff-secondary;
   font-size: $fz-secondary;
   line-height: $lh-secondary;
-}
-
-.intro__link {
-  display: block;
-  width: fit-content;
-  padding: 26px 48px;
-  color: $color-white;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background-color: $color-black;
-  border-radius: 18px;
 }

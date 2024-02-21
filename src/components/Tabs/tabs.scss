@@ -1,0 +1,28 @@
+.tabs__list {
+  margin: 0 auto 61px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid $color-dark-gold;
+  border-radius: 18px;
+
+  & .router-link-exact-active {
+    color: $color-white;
+    background-color: $color-dark-gold;
+    border-radius: 18px;
+  }
+}
+
+.tabs__btn {
+  display: block;
+  padding: 26px 66px;
+  color: $color-black;
+  font-family: $ff-secondary;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
