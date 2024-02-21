@@ -1,6 +1,5 @@
 <script setup>
 import './article.scss';
-import { computed } from 'vue';
 import { useIndexStore } from "../../stores/index";
 import Quote from '@/components/Quote/Quote.vue';
 
@@ -9,13 +8,6 @@ const store = useIndexStore();
 const props = defineProps({
   currentTag: Number
 })
-
-// const currentArticle = computed(() => {
-//   if(props.currentTag) {
-//     return articles[props.currentTag]
-//   }
-//   return null
-// })
 
 </script>
 

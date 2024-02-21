@@ -678,7 +678,6 @@ export const useIndexStore = defineStore("index", {
       for (const category of state.projects) {
         currentProject = category.categoryProjects.find(project => project.id == projectId);
         if (currentProject) {
-          console.log(currentProject);
           return currentProject;
         }
       }

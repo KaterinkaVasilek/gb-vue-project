@@ -1,0 +1,27 @@
+.error-content {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 81px;
+}
+
+.error-content__content {
+  margin: 0;
+  max-width: 569px;
+}
+
+.error-content__title {
+  margin-bottom: 15px;
+  color: $color-dark-gold;
+  font-size: 250px;
+  line-height: 250px;
+}
+
+.error-content__desc {
+  margin-bottom: 23px;
+  font-size: 35px;
+}
+
+.error-content__img {
+  border-bottom-left-radius: 280px;
+}

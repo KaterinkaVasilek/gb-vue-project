@@ -12,6 +12,7 @@ import Bedroom from '@/pages/projects/BedroomPage.vue';
 import Kitchan from '@/pages/projects/KitchanPage.vue';
 import Living from '@/pages/projects/LivingPage.vue';
 import ProjectDetail from '@/pages/projects/ProjectDetail.vue';
+import ErrorPage from '@/pages/ErrorPage.vue';
 
 const pinia = createPinia();
 const routes = [
@@ -63,6 +64,10 @@ const routes = [
   {
     component: ProjectDetail,
     path: '/project-detail/:id'
+  },
+  {
+    component: ErrorPage,
+    path: '/:pathMatch(.*)'
   }
 ]
 

@@ -81,16 +81,3 @@
   font-size: $fz-secondary;
   line-height: $lh-secondary;
 }
-
-.intro__link {
-  display: block;
-  width: fit-content;
-  padding: 26px 48px;
-  color: $color-white;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background-color: $color-black;
-  border-radius: 18px;
-}
