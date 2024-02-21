@@ -6,6 +6,12 @@
   gap: 10px;
   border: 1px solid $color-dark-gold;
   border-radius: 18px;
+
+  & .router-link-exact-active {
+    color: $color-white;
+    background-color: $color-dark-gold;
+    border-radius: 18px;
+  }
 }
 
 .tabs__btn {
@@ -19,10 +25,4 @@
   text-align: center;
   background-color: transparent;
   border: none;
-
-  &--active {
-    color: $color-white;
-    background-color: $color-dark-gold;
-    border-radius: 18px;
-  }
 }

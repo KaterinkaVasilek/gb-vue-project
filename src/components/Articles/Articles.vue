@@ -1,18 +1,9 @@
 <script setup>
 import './articles.scss';
 import { computed } from 'vue';
-import { dataTags } from '@/data/dataTags.js';
 
-const tags = JSON.parse(dataTags);
-let arrTag = [];
-
-// const arrParse = () => {
-//   tags.forEach(item => {
-//     arrTag.push(item.tagName);
-//   })
-//   return arrTag;
-// }
-// arrParse();
+import { useIndexStore } from '../../stores';
+const store = useIndexStore();
 
 const props = defineProps({
   max: Boolean,
@@ -20,53 +11,9 @@ const props = defineProps({
   isBlog: Boolean
 })
 
-const articles = [
-  {
-    id: 1,
-    src: '/img/articles-1.jpg',
-    tag: 'Livig Room',
-    title: 'Let’s Get Solution For Building Construction Work',
-    date: '26 December,2022'
-  },
-  {
-    id: 2,
-    src: '/img/articles-2.jpg',
-    tag: 'Bedroom',
-    title: 'Low Cost Latest Invented Interior Designing Ideas.',
-    date: '26 December,2022'
-  },
-  {
-    id: 3,
-    src: '/img/articles-3.jpg',
-    tag: 'Building',
-    title: 'Best For Any Office & Business Interior Solution',
-    date: '22 December,2022'
-  },
-  {
-    id: 4,
-    src: '/img/articles-4.jpg',
-    tag: 'Architecture',
-    title: 'Let’s Get Solution For Building Construction Work',
-    date: '26 December,2022'
-  },
-  {
-    id: 5,
-    src: '/img/articles-5.jpg',
-    tag: 'Kitchen Planning',
-    title: 'Low Cost Latest Invented Interior Designing Ideas.',
-    date: '22 December,2022'
-  },
-  {
-    id: 6,
-    src: '/img/articles-6.jpg',
-    tag: 'Bathroom',
-    title: 'Best For Any Office & Business Interior Solution',
-    date: '25 December,2022'
-  }
-]
 
 const spliceList = computed(() => {
-  return props.isMain ? articles.splice(0, 3) : articles;
+  return props.isMain ? store.articles.splice(0, 3) : store.articles;
 })
 
 </script>

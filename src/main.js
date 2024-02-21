@@ -11,6 +11,7 @@ import Bathroom from '@/pages/projects/BathroomPage.vue';
 import Bedroom from '@/pages/projects/BedroomPage.vue';
 import Kitchan from '@/pages/projects/KitchanPage.vue';
 import Living from '@/pages/projects/LivingPage.vue';
+import ProjectDetail from '@/pages/projects/ProjectDetail.vue';
 
 const pinia = createPinia();
 const routes = [
@@ -58,6 +59,10 @@ const routes = [
   {
     component: Article,
     path: '/article'
+  },
+  {
+    component: ProjectDetail,
+    path: '/project-detail/:id'
   }
 ]
 

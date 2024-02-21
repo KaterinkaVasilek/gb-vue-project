@@ -2,9 +2,8 @@
 import './article-detail.scss';
 import { reactive } from 'vue';
 import Article from '@/components/Article/Article.vue';
-import { dataTags } from '@/data/dataTags.js';
-
-const tags = JSON.parse(dataTags);
+import { useIndexStore } from '../../stores';
+const store = useIndexStore();
 
 const data = reactive({
  tagId: null
@@ -23,7 +22,7 @@ const setId = (e) => {
     <ul class="article-detail__list">
       <li 
         class="article-detail__item" 
-        v-for="tag in tags" 
+        v-for="tag in store.tags" 
         :key="tag.id" 
         :class="{ 'article-detail__item--active' : data.tagId == tag.id }"
       >

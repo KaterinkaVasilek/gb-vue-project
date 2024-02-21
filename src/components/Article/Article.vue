@@ -1,24 +1,21 @@
 <script setup>
 import './article.scss';
 import { computed } from 'vue';
-import { useIndexStore } from "@/stores/index";
+import { useIndexStore } from "../../stores/index";
 import Quote from '@/components/Quote/Quote.vue';
-import { dataArticles } from '@/data/dataArticles.js';
 
-const articles = JSON.parse(dataArticles);
 const store = useIndexStore();
-console.log(store.article);
 
 const props = defineProps({
   currentTag: Number
 })
 
-const currentArticle = computed(() => {
-  if(props.currentTag) {
-    return articles[props.currentTag]
-  }
-  return null
-})
+// const currentArticle = computed(() => {
+//   if(props.currentTag) {
+//     return articles[props.currentTag]
+//   }
+//   return null
+// })
 
 </script>
 

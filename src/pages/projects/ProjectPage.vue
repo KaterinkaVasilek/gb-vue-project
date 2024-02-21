@@ -1,4 +1,5 @@
 <script setup>
+import '@/components/ProjectsTabs/projects-tabs.scss';
 import { ref } from 'vue';
 import Header from '@/components/Header/Header.vue';
 import Intro from '@/components/Intro/Intro.vue';
