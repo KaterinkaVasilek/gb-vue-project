@@ -6,16 +6,13 @@ import { dataTags } from '@/data/dataTags.js';
 const tags = JSON.parse(dataTags);
 let arrTag = [];
 
-const arrParse = () => {
-  tags.forEach(item => {
-    arrTag.push(item.tagName);
-  })
-  return arrTag;
-}
-arrParse();
-const tagsParse = () => {
-  
-}
+// const arrParse = () => {
+//   tags.forEach(item => {
+//     arrTag.push(item.tagName);
+//   })
+//   return arrTag;
+// }
+// arrParse();
 
 const props = defineProps({
   max: Boolean,
@@ -27,7 +24,7 @@ const articles = [
   {
     id: 1,
     src: '/img/articles-1.jpg',
-    tag: arrParse(),
+    tag: 'Livig Room',
     title: 'Let’s Get Solution For Building Construction Work',
     date: '26 December,2022'
   },

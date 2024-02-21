@@ -1,0 +1,25 @@
+<script setup>
+import { dataProjects } from '@/data/dataProjects.js';
+
+const projects = JSON.parse(dataProjects);
+
+const currentCategory = () => {
+  return Array.from(projects[3].categoryProjects);
+}
+
+</script>
+
+<template>
+  <ul class="projects-tabs__list common">
+    <li class="projects-tabs__item" v-for="item in currentCategory()" :key="id">
+      <img class="projects-tabs__img" :src="item.src" alt="Фото проекта ванной комнаты.">
+      <div class="projects-tabs__info">
+        <div class="projects-tabs__left">
+          <p class="projects-tabs__name">{{ item.name }}</p>
+          <p class="projects-tabs__tags">{{ item.tag1 }} / {{ item.tag2 }}</p>
+        </div>
+        <span class="common__arrow"></span>
+      </div>
+    </li>
+  </ul>
+</template>

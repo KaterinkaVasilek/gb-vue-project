@@ -15,7 +15,7 @@ import './nav.scss';
         <router-link class="nav__link" to='/blog'>Blog</router-link>
       </li>
       <li>
-        <router-link class="nav__link" to='/project'>Project</router-link>
+        <router-link class="nav__link" to='/projects'>Project</router-link>
       </li>
     </ul>
   </nav>

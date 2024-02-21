@@ -8,6 +8,12 @@
     background-image: url("../img/article-intro.jpg");
     background-size: contain;
   }
+
+  &--projects {
+    background-image: url("../img/projects-intro.jpg");
+    background-size: contain;
+    background-position: right;
+  }
 }
 
 .intro__content {
